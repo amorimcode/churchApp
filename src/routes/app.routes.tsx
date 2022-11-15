@@ -7,9 +7,9 @@ const { Navigator, Screen } = createNativeStackNavigator();
 
 export default function AppRoutes() {
   return (
-    <Navigator>
-      <Screen name="home" component={Home} />
-      <Screen name="bible" component={Bible} />
+    <Navigator initialRouteName="route">
+      <Screen name="home" component={Home} options={{ title: "Início" }} />
+      <Screen name="bible" component={Bible} options={{ title: "Biblia" }} />
     </Navigator>
   );
 }

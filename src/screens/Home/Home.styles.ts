@@ -7,4 +7,17 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  title: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  header: {
+    margin: 20,
+    position: "absolute",
+    top: 0,
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+  },
 });
