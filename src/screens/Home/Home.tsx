@@ -1,11 +1,14 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { Button, Text, View } from "react-native";
 import HomeStyles from "./Home.styles";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <View style={HomeStyles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Button
+        onPress={() => navigation.navigate("bible")}
+        title="Ler a bíblia"
+      ></Button>
       <StatusBar style="auto" />
     </View>
   );
